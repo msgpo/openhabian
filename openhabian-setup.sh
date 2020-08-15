@@ -108,6 +108,8 @@ if [[ -n "$UNATTENDED" ]]; then
   clean_config_userpw
   frontail_setup
   zram_setup
+  amanda_setup
+  setup_mirror_SD "install"
   install_cleanup
 else
   apt_update
